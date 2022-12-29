@@ -23,7 +23,6 @@ function Search({ hideButtons = false }) {
       term: input,
     })
 
-    // Do something with input... come back and fix
     navigate("/search");
   };
 

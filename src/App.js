@@ -1,15 +1,14 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import Search from './components/Search';
+import SearchPage from './pages/SearchPage';
 
 function App() {
   return (
     // BEM
     <Router>
-
       <Routes>
-        <Route path='/search' element={<Search />}></Route>
+        <Route path='/search' element={<SearchPage />}></Route>
         <Route path='/' element={<Home />}></Route>
       </Routes>
     </Router>
