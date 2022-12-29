@@ -1,0 +1,50 @@
+
+.search__input {
+  display: flex;
+  align-items: center;
+  border: 0.5px solid lightgray;
+  height: 30px;
+  padding: 10px 20px;
+  border-radius: 999px;     /* Perfect curvature */
+  width: 75vw;
+  margin: 0 auto;
+  margin-top: 40px;
+  max-width: 560px;
+}
+
+.search__input > input {
+  flex: 1;
+  padding: 10px 20px;
+  font-size: medium;
+  border: none;
+}
+
+.search__input > input:focus {
+  outline: none;
+}
+
+.search__input:hover {
+  
+  box-shadow: 0 0px 2px 0 rgb(0 0 0 / 45%);
+}
+
+.search__input--icon {
+  color: rgb(165, 165, 165);
+}
+
+img {
+  height: 100%;
+}
+
+.search__mic {
+  height: 70%;
+  margin-right: 24px;
+}
+
+.search__camera {
+  height: 80%;
+}
+
+.search__img-wrapper:hover {
+  cursor: pointer;
+}
