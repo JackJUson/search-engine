@@ -1,8 +1,12 @@
+/* HOME */
+
 .home {
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
+
+/* HEADER */
 
 .home__header {
   display: flex;
@@ -32,6 +36,8 @@
 .home__header--right > .home__header--apps {
   margin-right: 20px;
 }
+
+/* BODY */
 
 .home__body {
   flex: 1;
