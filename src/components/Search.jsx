@@ -15,14 +15,12 @@ function Search({ hideButtons = false }) {
   const search = (event) => {
     event.preventDefault();
 
-    console.log("You hit the search button");
-    console.log(input);
-
     dispatch({
       type: actionTypes.SET_SEARCH_TERM,
       term: input,
     })
 
+    console.log(input);
     navigate("/search");
   };
 

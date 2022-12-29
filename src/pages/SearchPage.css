@@ -1,0 +1,54 @@
+.search__page--header {
+  display: flex;
+  position: sticky;         /* Keeps header always at top of page when scrolling */
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  align-items: flex-start;  /* */
+  padding: 30px;
+  border-bottom: 1px solid lightgray;
+}
+
+.search__page--logo {
+  object-fit: contain;
+  height: 50px;
+  margin-right: 50px;
+}
+
+.search__page--header-body > .search > .search__input {
+  margin-top: 0;
+  width: unset;
+  margin: unset;
+  max-width: unset;
+}
+
+.search__page--options {
+  display: flex;
+  align-items: center;
+  color: #70757a;
+}
+
+.search__page--options a,
+.search__page--options-right a {
+  text-decoration: none;
+  color: #70757a;
+}
+
+.search__page--options-left,
+.search__page--options-right {
+  display: flex;
+}
+
+.search__page--options-right {
+  margin-left: 80px;
+}
+
+.search__page--option {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.search__page--option a {
+  margin-left: 4px;
+}
