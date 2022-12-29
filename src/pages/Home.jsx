@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import AppsIcon from "@mui/icons-material/Apps";
 import Avatar from "@mui/material/Avatar";
 import "./Home.css";
+import Search from "../components/Search";
 
 function Home() {
   return (
@@ -25,7 +26,7 @@ function Home() {
           alt=""
         />
         <div className="home__input--container">
-          {/* <Search /> */}
+          <Search />
         </div>
       </div>
     </div>
