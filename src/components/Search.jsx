@@ -1,14 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Search.css";
 import SearchIcon from "@mui/icons-material/Search";
 import { Button } from "@mui/material";
 
 function Search() {
+  const [input, setInput] = useState("");
+
+  const search = (event) => {
+    event.preventDefault();
+
+    console.log('You hit the search button');
+    console.log(input);
+
+    // Do something with input... come back and fix
+    
+
+  };
+
   return (
-    <div className="search">
+    <form className="search">
       <div className="search__input">
         <SearchIcon className="search__input--icon" />
-        <input type="text" />
+        <input
+          value={input}
+          onChange={(event) => setInput(event.target.value)}
+        />
         <figure className="search__mic search__img-wrapper">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/2/22/Google_microphone_logo.png"
@@ -24,10 +40,12 @@ function Search() {
       </div>
 
       <div className="search__buttons">
-        <Button variant="outlined">Google Search</Button>
+        <Button type="submit" onClick={search} variant="outlined">
+          Google Search
+        </Button>
         <Button variant="outlined">I'm Feeling Lucky</Button>
       </div>
-    </div>
+    </form>
   );
 }
 
