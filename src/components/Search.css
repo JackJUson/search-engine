@@ -85,3 +85,7 @@ img {
   border: 1px solid #dddddd;
   color: #222;
 }
+
+.search__button--hidden {
+  display: none !important;
+}
