@@ -52,3 +52,40 @@
 .search__page--option a {
   margin-left: 4px;
 }
+
+.search__page--result {
+  margin: 40px 0;
+}
+
+.search__page--result-count {
+  color: #70757a;
+  font-size: 14px;
+}
+
+.search__page--results {
+  max-width: 650px;
+  margin: 20px 0 100px 240px;
+}
+
+.search__page--result-img {
+  object-fit: contain;
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.search__page--result-title {
+  text-decoration: none;
+}
+
+.search__page--result-title:hover {
+  text-decoration: underline;
+}
+
+.search__page--result-title > h2 {
+  font-weight: 500;
+}
+
+.search__page--result-snippet {
+  margin-top: 8px;
+}

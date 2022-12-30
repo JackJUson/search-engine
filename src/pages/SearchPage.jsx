@@ -14,8 +14,8 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 
 function SearchPage() {
   const [{ term }, dispatch] = useStateValue();
-  //const { data } = useGoogleSearch(term); // LIVE API CALL
-  const data = Response;
+  const { data } = useGoogleSearch(term); // LIVE API CALL
+  // const data = Response;
 
   console.log(data);
 
@@ -75,10 +75,24 @@ function SearchPage() {
 
           {data?.items.map((item) => (
             <div className="search__page--result">
-              <a href={item.link}>{item.displayLink}</a>
+              <a href={item.link}>
+                {item.pagemap?.cse_image?.length > 0 &&
+                  item.pagemap?.cse_image[0]?.src && (
+                    <img
+                      className="search__page--result-img"
+                      src={
+                        item.pagemap?.cse_image?.length > 0 &&
+                        item.pagemap?.cse_image[0]?.src
+                      }
+                      alt=""
+                    />
+                  )}
+                {item.displayLink}
+              </a>
               <a href={item.link} className="search__page--result-title">
                 <h2>{item.title}</h2>
               </a>
+              <p className="search__page--result-snippet">{item.snippet}</p>
             </div>
           ))}
         </div>
