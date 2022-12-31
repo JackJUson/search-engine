@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
-require("dotenv").config();
+import { useState, useEffect } from "react";
 
-const CONTEXT_KEY = process.env.CONTEXT_KEY;
-const API_KEY = process.env.API_KEY;
+const CONTEXT_KEY = process.env.REACT_APP_CONTEXT_KEY;
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 // Custom hook to use Google Search
 function useGoogleSearch(term) {
