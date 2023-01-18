@@ -1,9 +1,3 @@
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/108652931/213037560-84dce807-32e6-4c91-9acb-51ef0489d8e6.png"
-</p>
-
-<br/>
-<br/>
 
 ### Production
 app is hosted by vercel: https://search-engine-six-rust.vercel.app/
